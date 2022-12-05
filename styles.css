@@ -928,12 +928,7 @@ ul {
     .details, .ingedients {
       display:inline-flex;
     }
-  }
-
-  @page {
-      margin: 0.5cm;
-
-a:after; {
-      content:"("attr(href)")";
+ @page {
+        margin: 0.5cm;
     }
   }
