@@ -363,20 +363,20 @@ ul {
         display: inline-flex;
     }
 
-    section#search {
+    section#searchBar {
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 40px;
         padding-bottom: 20px;
     }
   
-    #search {
+    #searchBar {
         display: flex;
         order: -1;
         flex: 1;
     }
   
-    #search svg {
+    #searchBar svg {
         background-color: #EB5428;
         padding: 0px 5px 1px 5px;
     }
@@ -604,7 +604,7 @@ ul {
         margin-top: 0;
     }
 
-    section#search {
+    section#searchBar {
         padding: 20px;
         order: -1;
         position: absolute;
@@ -615,13 +615,13 @@ ul {
         height: 40px;
     }
   
-    #search {
+    #searchBar {
         display: flex;
         order: -1;
         flex: 1;
     }
   
-    #search svg {
+    #searchBar svg {
         background-color: #EB5428;
         padding: 0px 5px 1px 5px;
     }
@@ -757,7 +757,7 @@ ul {
         padding: 22px;
     }
 
-    section#search {
+    section#searchBar {
         width: 300px;
         padding: 40px 0px;
         float: none;
@@ -915,15 +915,21 @@ ul {
 }
 
 @media print {
-    header, footer, aside, nav, img {
+    header, footer, aside, nav, img, #searchBar {
       display: none;
     }
+
     .details, .ingredients, .directions {
-      width:100%!important;
-      padding:0!important;
-      margin:0!important;
+      width:100%;
+      padding:0;
+      margin:0;
     }
   }
+
   @page {
     margin: 0.5cm;
+
+a:after; {
+        content:"("attr(href)")";
+    }
   }
