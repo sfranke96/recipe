@@ -926,7 +926,8 @@ ul {
       margin:0;
     }
     .details, .ingedients {
-      display:inline-flex;
+      display: flex;
+      flex-direction: column;
     }
  @page {
         margin: 0.5cm;
