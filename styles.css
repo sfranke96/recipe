@@ -913,3 +913,17 @@ ul {
         margin-left: 0px;
     }
 }
+
+@media print {
+    header, footer, aside, nav, img {
+      display: none;
+    }
+    .details, .ingredients, .directions {
+      width:100%!important;
+      padding:0!important;
+      margin:0!important;
+    }
+  }
+  @page {
+    margin: 0.5cm;
+  }
